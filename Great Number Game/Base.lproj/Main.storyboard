@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Great_Number_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome to Great Number Game" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjw-DN-guz">
+                                <rect key="frame" x="0.0" y="119" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm thinking of a number between 1 to 100" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFL-WT-hgZ">
+                                <rect key="frame" x="0.0" y="198" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a guess!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmL-us-7tj">
+                                <rect key="frame" x="0.0" y="249" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7O0-vM-08v">
+                                <rect key="frame" x="0.0" y="307" width="414" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSj-zR-gKr">
+                                <rect key="frame" x="0.0" y="390" width="414" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Submit"/>
+                                <connections>
+                                    <action selector="submitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="75N-dV-vEb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7O0-vM-08v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Lw-yZ-inT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XFL-WT-hgZ" secondAttribute="trailing" id="2cd-SF-sGT"/>
+                            <constraint firstItem="7O0-vM-08v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3nr-Dy-PV8"/>
+                            <constraint firstItem="BSj-zR-gKr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3sG-0y-1fp"/>
+                            <constraint firstItem="XFL-WT-hgZ" firstAttribute="top" secondItem="Gjw-DN-guz" secondAttribute="bottom" constant="58.5" id="5JH-rh-8IS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cmL-us-7tj" secondAttribute="trailing" id="7KW-df-lCl"/>
+                            <constraint firstItem="Gjw-DN-guz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ay6-aT-EzA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BSj-zR-gKr" secondAttribute="trailing" id="LEd-ds-qRf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gjw-DN-guz" secondAttribute="trailing" id="PMJ-1D-wLp"/>
+                            <constraint firstItem="Gjw-DN-guz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T6n-rs-clh"/>
+                            <constraint firstItem="XFL-WT-hgZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V2v-9M-F0H"/>
+                            <constraint firstItem="cmL-us-7tj" firstAttribute="top" secondItem="XFL-WT-hgZ" secondAttribute="bottom" constant="30.5" id="XJ4-st-LGg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7O0-vM-08v" secondAttribute="trailing" id="aCm-FK-ybe"/>
+                            <constraint firstItem="BSj-zR-gKr" firstAttribute="top" secondItem="7O0-vM-08v" secondAttribute="bottom" constant="49" id="chY-ad-gTP"/>
+                            <constraint firstItem="BSj-zR-gKr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d1T-yJ-WnV"/>
+                            <constraint firstItem="XFL-WT-hgZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="glm-uZ-cwG"/>
+                            <constraint firstItem="cmL-us-7tj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="h6p-FM-LBy"/>
+                            <constraint firstItem="cmL-us-7tj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iCn-8s-sK3"/>
+                            <constraint firstItem="7O0-vM-08v" firstAttribute="top" secondItem="cmL-us-7tj" secondAttribute="bottom" constant="37.5" id="lcb-4d-Gom"/>
+                            <constraint firstItem="Gjw-DN-guz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="rC7-44-dtS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textFiled" destination="7O0-vM-08v" id="0jZ-8K-HIj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
